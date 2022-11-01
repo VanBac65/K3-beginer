@@ -1,0 +1,41 @@
+.building-digital {
+    display: flex;
+    margin-top: 10%;
+}
+
+.building-digital .left {
+    width: 50%;
+}
+
+.building-digital .right {
+    width: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width:391px) {
+    .building-digital {
+        flex-direction: column;
+    }
+    .building-digital .left {
+        width: 100%;
+    }
+
+    .btn-contact{
+        width: 100%;
+    }
+
+    .building-digital .left button {
+        margin: auto;
+    }
+    
+    .building-digital .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .building-digital .right img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}

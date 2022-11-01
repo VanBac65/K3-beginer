@@ -1,0 +1,41 @@
+.footer {
+    margin-top: 10%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 10%;
+}
+
+.footer .itemFooter .name-itemFooter {
+    font-size: 1.5em;
+}
+
+.footer .itemFooter ul {
+    list-style: none;
+    padding: 0;
+    width: max-content;
+}
+
+.footer .itemFooter ul li {
+    line-height: 2em;
+    font-weight: 100;
+}
+
+@media screen and (max-width:391px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .itemFooter {
+        margin-top: 10%;
+    }
+
+    .footer ul {
+        display: block;
+        width: max-content;
+        margin: auto;
+        margin-top: 5%;
+    }
+}
