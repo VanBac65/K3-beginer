@@ -21,10 +21,6 @@ export default class buttonContactUs extends Component {
   }
 
   componentDidMount() {
-    // alert('DONE DID MOUNT!!')
-    // fetch('https://jsonplaceholder.typicode.com/todos/1')
-    //   .then(response => response.json())
-    //   .then(json => console.log('json',json))
     console.log('Component DidMount')
   }
 
