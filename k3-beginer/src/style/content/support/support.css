@@ -1,0 +1,65 @@
+.support {
+    margin-top: 10%;
+    display: flex;
+}
+
+.support .left {
+    width: 50%;
+    text-align: center;
+}
+
+.support .right {
+    width: 40%;
+    margin: auto;
+}
+
+.support .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.support .right .title {
+    width: 80%;
+}
+
+@media screen and (max-width:391px) {
+    .support {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .support .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .support .right{
+        width: 100%;
+    }
+
+    .support .right .title{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    .support .right .des{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        font-size: 0.8em;
+        margin-top: 10%;
+    }
+
+    .support .right .btn-contact {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .support .right .btn-contact button {
+        display: block;
+        width: max-content;
+        margin: auto;
+    }
+}

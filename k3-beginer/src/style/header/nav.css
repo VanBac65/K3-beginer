@@ -1,0 +1,23 @@
+.nav {
+    display: flex;
+    width: 50%;
+}
+
+.nav ul {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav ul  li{
+    width: max-content;
+    list-style: none;
+    padding: 0.2em 0.5em;
+}
+
+@media only screen and (max-width:391px) {
+    .header .nav {
+        display: none;
+    }
+}

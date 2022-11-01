@@ -1,0 +1,78 @@
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonials .title {
+    font-size: 1em;
+    text-align: center;
+}
+
+.testimonials .des {
+    font-size: 3em;
+    margin: 0;
+    width: 33%;
+    text-align: center;
+    margin: 1% auto;
+}
+
+.testimonials .items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.testimonials .items .item {
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 2em;
+    background-color: #F5F5F5;
+}
+
+.testimonials .items .item .img {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.testimonials .items .item .img img{
+    width: 50%;
+    height: 90%;
+    object-fit: contain;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+
+.testimonials .items .item .item-bottom {
+    height: 50%;
+}
+
+.testimonials .items .item .item-bottom .name {
+    text-align: center;
+}
+
+.testimonials .items .item .item-bottom .des {
+    font-size: 1em;
+    width: 75%;
+}
+
+@media only screen and (max-width:391px){
+    .testimonials > .des {
+        font-size: 1.8em;
+        width: 100%;
+        font-weight: 700;
+    }
+
+    .testimonials .items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials .items .item {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+}

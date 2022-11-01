@@ -1,0 +1,56 @@
+.branding {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.branding .left {
+    width: 50%;
+    text-align: center;
+}
+
+.branding .right {
+    width: 40%;
+    margin: auto;
+}
+
+@media screen and (max-width:391px) {
+    .branding {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 10%;
+    }
+
+    .branding .right {
+        width: 80%;
+        margin: auto;
+    }
+
+    .branding .right .title {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .branding .right .des {
+        width: 100%;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .branding .right .arrow {
+        transform: rotate(90deg);
+        margin: auto;
+        width: max-content;
+    }
+
+    .branding .left {
+        width: 100%;
+    }
+
+    .branding .left img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
