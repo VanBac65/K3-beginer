@@ -5,7 +5,8 @@ export default class buttonContactUs extends Component {
   constructor() {
     super()
     this.state = {
-      name: 'CONTACT US', check: true
+      name: 'CONTACT US', 
+      check: true
     }
     this.btnClick = this.btnClick.bind(this)
   }
