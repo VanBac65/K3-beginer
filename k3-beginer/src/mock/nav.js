@@ -1,0 +1,1 @@
+export const navFake = ['home','about','testimonials','contact']

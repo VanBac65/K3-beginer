@@ -1,14 +1,15 @@
 import React from 'react'
 import '../../../style/header/nav.css'
 
-export default function Nav() {
+export default function Nav({ dataNav }) {
   return (
     <div className='nav'>
       <ul>
-        <li>home</li>
-        <li>about</li>
-        <li>testimonals</li>
-        <li>contact</li>
+        {
+          dataNav.map((el) => {
+            return (<li key={el}>{el}</li>)
+          })
+        }
       </ul>
     </div>
   )
