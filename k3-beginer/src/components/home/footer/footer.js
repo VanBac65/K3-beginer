@@ -2,25 +2,17 @@ import React from 'react'
 import ItemFooter from './itemFooter'
 import '../../../style/footer/footer.css'
 
-export default function Footer() {
+export default function Footer({ dataFooter }) {
+    console.log(dataFooter)
     return (
         <div className='footer'>
-            <ItemFooter
-                name='Digital Agency'
-                arrString={['Building digital products, brands & experience']}
-            />
-            <ItemFooter
-                name='Resources'
-                arrString={['Guides','Blog','Cuistomer Stories','Glossery']}
-            />
-            <ItemFooter
-                name='Company'
-                arrString={['About Us','Careers','Partners','Contact Us']}
-            />
-            <ItemFooter
-                name='Social Media'
-                arrString={['LinkedIn','Facebook','Instagram','Twitter']}
-            />
+            {
+                dataFooter.map((el) => {
+                    return (
+                        <ItemFooter key={el.name} name={el.name} arrString={el.item} />
+                    )
+                })
+            }
         </div>
     )
 }

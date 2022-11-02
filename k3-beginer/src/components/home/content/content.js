@@ -6,14 +6,14 @@ import Support from './support/support'
 import Testimonials from './testimonials/testimonials'
 import Trusted from './trusted/trusted'
 
-export default function Content() {
+export default function Content({dataUser}) {
     return (
         <div className='content'>
             <BuildingDigital />
             <Trusted />
             <Branding />
             <Custom />
-            <Testimonials />
+            <Testimonials dataUser={dataUser}/>
             <Support />
         </div>
     )

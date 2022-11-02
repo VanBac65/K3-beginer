@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { getUsers } from '../../../../services/users'
 
 export default function Item({ img, name, des }) {
     return (
